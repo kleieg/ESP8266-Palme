@@ -1,6 +1,6 @@
 // set hostname used for MQTT tag and WiFi
 #define HOSTNAME "ESP-Flamingo"
-#define MQTT_BROKER "192.168.178.15"
+#define MQTT_BROKER "sym_mqtt"
 #define VERSION "v 5.1.0"
 
 #define MQTT_INTERVAL 120000
