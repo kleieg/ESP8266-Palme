@@ -6,7 +6,7 @@
 #include <ESPAsyncWebServer.h>
 #include "LittleFS.h"
 #include <Arduino_JSON.h>
-#include <AsyncElegantOTA.h>
+#include <ElegantOTA.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
@@ -279,7 +279,7 @@ void setup()
 
   // Start ElegantOTA
   LOG_PRINTLN("start Elegant OTA");
-  AsyncElegantOTA.begin(&Asynserver);
+  ElegantOTA.begin(&Asynserver);
 
   // Start server
   LOG_PRINTLN("start server");
