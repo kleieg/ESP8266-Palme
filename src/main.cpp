@@ -1,3 +1,8 @@
+//
+//Benutzt für Palme unD LED 
+// Anpassungen: in config.h den Namen
+//
+//
 
 // Import required libraries
 #include <Arduino.h>
@@ -6,7 +11,7 @@
 #include <ESPAsyncWebServer.h>
 #include "LittleFS.h"
 #include <Arduino_JSON.h>
-#include <ElegantOTA.h>
+#include <AsyncElegantOTA.h>
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
@@ -279,7 +284,7 @@ void setup()
 
   // Start ElegantOTA
   LOG_PRINTLN("start Elegant OTA");
-  ElegantOTA.begin(&Asynserver);
+  AsyncElegantOTA.begin(&Asynserver);
 
   // Start server
   LOG_PRINTLN("start server");
