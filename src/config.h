@@ -1,5 +1,5 @@
 // set hostname used for MQTT tag and WiFi
-#define HOSTNAME "ESP-LED"
+#define HOSTNAME "ESP-Palme"
 #define MQTT_BROKER "sym_mqtt"
 #define VERSION "v 1.1.0"
 
