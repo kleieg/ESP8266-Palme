@@ -222,6 +222,7 @@ void MQTTsend()
 
   mqtt_data["Time"] = My_time;
   mqtt_data["RSSI"] = WiFi.RSSI();
+  mqtt_data["IP"] = WiFi.localIP().toString().c_str();
 
   if  ( digitalRead(GPIO_switch) ) {
     actuators["Flamingo"] = true;
